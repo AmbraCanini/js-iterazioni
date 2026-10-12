@@ -16,13 +16,34 @@
 
 //esercizio do/while
 
-let pin = Number(prompt("Inserisci il tuo PIN"));
+//let pin = Number(prompt("Inserisci il tuo PIN"));
 
-do {
-    pin = prompt("Inserisci il PIN:");
-    if (pin != 1234) {
-        console.log("PIN errato, riprova!");
-    }
-} while (pin != "1234");
+//do {
+//pin = prompt("Inserisci il PIN:");
+//if (pin != 1234) {
+//    console.log("PIN errato, riprova!");
+//}
+//while (pin != "1234");
 
-console.log("PIN corretto")
+//console.log("PIN corretto")
+
+
+//esercizio ciclo for
+
+//let numero = Number(prompt("Inserisci un numero"));
+//let somma = 1;
+
+//for (let i = 1; i <= numero; i++) {
+//    somma = somma + i;
+//}
+
+//console.log(somma)
+
+//for (let i = 1; i <= 100; i += 2) {
+//    console.log(i);
+//}
+
+
+for (let i = 1; i <= 100; i += 3) {
+    console.log(i);
+}
