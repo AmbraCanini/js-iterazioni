@@ -43,7 +43,23 @@
 //    console.log(i);
 //}
 
-
-for (let i = 1; i <= 100; i += 3) {
+/*for (let i = 1; i <= 100; i += 3) {
     console.log(i);
+}*/
+
+
+//esercizio scope delle variabili la variabile nelle graffe esiste solo lì, se la metto fuori può funzionare anche dentro le graffe se richiamata
+
+const soglia = 18
+
+for (let i = 1; i <= 4; i++) {
+    const voto = Number(prompt("Inserisci un voto: " + i))
+    if (voto >= soglia) {
+        console.log(voto + " sufficiente")
+    } else {
+        console.log(voto + " insufficiente")
+    }
 }
+
+
+
