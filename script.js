@@ -52,14 +52,29 @@
 
 const soglia = 18
 
-for (let i = 1; i <= 4; i++) {
-    const voto = Number(prompt("Inserisci un voto: " + i))
-    if (voto >= soglia) {
-        console.log(voto + " sufficiente")
-    } else {
-        console.log(voto + " insufficiente")
+//for (let i = 1; i <= 4; i++) {
+//const voto = Number(prompt("Inserisci un voto: " + i))
+//if (voto >= soglia) {
+//  console.log(voto + " sufficiente")
+//} else {
+//  console.log(voto + " insufficiente")
+//}
+//}
+
+//esercizio finale
+
+const numeroSegreto = 7
+let tentativi = 0
+let numero;
+
+while (numero != numeroSegreto) {
+    numero = Number(prompt("Indovina il numero segreto: "));
+    tentativi++;
+    if (numero < numeroSegreto) {
+        console.log("Troppo Basso!");
+    } else if (numero > numeroSegreto) {
+        console.log("Troppo Alto!");
     }
 }
 
-
-
+console.log("Hai indovinato! Tentativi effettuati: " + tentativi);
